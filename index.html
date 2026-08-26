@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kindred | Meaningful Connections</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -29,6 +30,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 20px;
     }
 
     .logo {
@@ -37,11 +39,21 @@
       letter-spacing: -1px;
     }
 
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 22px;
+    }
+
     nav a {
       color: #55584f;
       text-decoration: none;
-      margin-left: 25px;
       font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .hero {
@@ -131,6 +143,13 @@
       margin-top: 25px;
     }
 
+    .safety-box {
+      background: #E5EBDD;
+      padding: 30px;
+      border-radius: 20px;
+      margin-top: 25px;
+    }
+
     a {
       color: #596352;
     }
@@ -143,18 +162,25 @@
       border-top: 1px solid #deddd7;
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 750px) {
       header {
         flex-direction: column;
-        gap: 12px;
       }
 
-      nav a {
-        margin: 0 8px;
+      nav {
+        gap: 10px 16px;
       }
 
       .hero {
         padding-top: 70px;
+      }
+
+      section {
+        padding: 60px 7%;
+      }
+
+      h2 {
+        font-size: 31px;
       }
     }
   </style>
@@ -164,53 +190,81 @@
 
 <header>
   <div class="logo">kindred</div>
+
   <nav>
     <a href="#about">About</a>
     <a href="#privacy">Privacy</a>
     <a href="#delete">Delete Account</a>
+    <a href="#child-safety">Child Safety</a>
     <a href="#support">Support</a>
   </nav>
 </header>
 
 <main>
 
+  <!-- ABOUT -->
+
   <section class="hero" id="about">
     <span class="badge">Dating with intention</span>
-    <h1>Meaningful connection<br>starts here.</h1>
+
+    <h1>
+      Meaningful connection<br>
+      starts here.
+    </h1>
+
     <p>
       Kindred is a dating app designed for people looking for genuine,
       respectful connections and intentional relationships.
     </p>
   </section>
 
+
+  <!-- FEATURES -->
+
   <section>
     <div class="content">
       <h2>Built differently.</h2>
 
       <div class="features">
+
         <div class="feature">
           <h3>Intentional dating</h3>
-          <p>Designed around meaningful connections instead of endless swiping.</p>
+          <p>
+            Designed around meaningful connections instead of endless swiping.
+          </p>
         </div>
 
         <div class="feature">
           <h3>Authentic profiles</h3>
-          <p>Kindred is designed to encourage genuine people and authentic interactions.</p>
+          <p>
+            Kindred is designed to encourage genuine people and authentic
+            interactions.
+          </p>
         </div>
 
         <div class="feature">
           <h3>Safety first</h3>
-          <p>Reporting and blocking tools help members stay in control of their experience.</p>
+          <p>
+            Reporting and blocking tools help members stay in control of
+            their experience.
+          </p>
         </div>
+
       </div>
     </div>
   </section>
 
+
+  <!-- PRIVACY -->
+
   <section class="white" id="privacy">
     <div class="content">
+
       <h2>Privacy Policy</h2>
 
-      <p><strong>Last updated: August 17, 2026</strong></p>
+      <p>
+        <strong>Last updated: August 17, 2026</strong>
+      </p>
 
       <p>
         Kindred respects your privacy. This Privacy Policy describes the
@@ -219,19 +273,31 @@
       </p>
 
       <h3>Information we collect</h3>
-      <p>Depending on how you use Kindred, information may include:</p>
+
+      <p>
+        Depending on how you use Kindred, information may include:
+      </p>
 
       <ul>
         <li>Account information such as your email address.</li>
         <li>Profile information, photos, bio, and dating preferences.</li>
-        <li>Location information used to help show relevant people nearby.</li>
+        <li>
+          Location information used to help show relevant people nearby.
+        </li>
         <li>Matches, messages, and other interactions within Kindred.</li>
-        <li>Reports, blocks, and information submitted through safety features.</li>
-        <li>Notification information necessary to deliver app notifications.</li>
-        <li>Basic technical and service information necessary to operate the app.</li>
+        <li>
+          Reports, blocks, and information submitted through safety features.
+        </li>
+        <li>
+          Notification information necessary to deliver app notifications.
+        </li>
+        <li>
+          Basic technical and service information necessary to operate the app.
+        </li>
       </ul>
 
       <h3>How information is used</h3>
+
       <p>
         Information is used to operate Kindred, provide matching and messaging
         functionality, personalize the dating experience, maintain safety,
@@ -239,6 +305,7 @@
       </p>
 
       <h3>Location</h3>
+
       <p>
         Kindred may use location information to determine approximate distance
         and provide location-based matching. Kindred does not intend to publicly
@@ -246,12 +313,14 @@
       </p>
 
       <h3>Safety</h3>
+
       <p>
         Information associated with reports or blocks may be used to investigate
         violations of Kindred's community and safety rules and to protect users.
       </p>
 
       <h3>Account deletion</h3>
+
       <p>
         Users can delete their Kindred account through the application's account
         settings. Information associated with an account will be handled in
@@ -259,23 +328,30 @@
       </p>
 
       <h3>Policy updates</h3>
+
       <p>
         This Privacy Policy may be updated as Kindred evolves. The date above
         will be updated when material changes are made.
       </p>
 
       <h3>Contact</h3>
+
       <p>
         Questions about privacy can be sent to
         <a href="mailto:kindredappofficial@gmail.com">
           kindredappofficial@gmail.com
         </a>.
       </p>
+
     </div>
   </section>
 
+
+  <!-- DELETE ACCOUNT -->
+
   <section id="delete">
     <div class="content">
+
       <h2>Delete Your Kindred Account</h2>
 
       <p>
@@ -284,13 +360,19 @@
       </p>
 
       <div class="delete-box">
+
         <h3>Delete directly in the Kindred app</h3>
+
         <p>
-          Open <strong>Kindred → Settings → Privacy & Safety → Delete account</strong>
+          Open
+          <strong>
+            Kindred → Settings → Privacy &amp; Safety → Delete account
+          </strong>
           and follow the confirmation steps.
         </p>
 
         <h3>Can't access the app?</h3>
+
         <p>
           Send an account-deletion request from the email address associated
           with your Kindred account to
@@ -298,34 +380,112 @@
             kindredappofficial@gmail.com
           </a>.
         </p>
+
       </div>
 
       <h3>What is deleted</h3>
+
       <p>
         Account and profile information associated with the user's Kindred
         account is removed as part of the account-deletion process, subject
         to information that may need to be retained for legitimate security,
         fraud-prevention, legal, or regulatory purposes.
       </p>
+
     </div>
   </section>
 
-  <section class="white" id="support">
+
+  <!-- CHILD SAFETY -->
+
+  <section class="white" id="child-safety">
     <div class="content">
+
+      <span class="badge">18+ only</span>
+
+      <h2>Child Safety Standards</h2>
+
+      <p>
+        <strong>Kindred is an adult dating service intended only for users
+        who are 18 years of age or older.</strong>
+      </p>
+
+      <p>
+        Minors are not permitted to create or use Kindred accounts.
+        Kindred maintains a zero-tolerance policy toward child sexual abuse
+        and exploitation (CSAE), including content or behavior that facilitates,
+        promotes, solicits, depicts, or enables the sexual exploitation or
+        abuse of children.
+      </p>
+
+      <div class="safety-box">
+
+        <h3>Reporting child safety concerns</h3>
+
+        <p>
+          Kindred users can report suspected underage users and child safety
+          or sexual exploitation concerns directly within the Kindred app.
+        </p>
+
+        <h3>Review and enforcement</h3>
+
+        <p>
+          Child safety reports are reviewed through Kindred's moderation
+          system and are treated as high-priority safety concerns.
+          Accounts that violate Kindred's child safety standards may be
+          suspended or permanently banned.
+        </p>
+
+      </div>
+
+      <h3>Escalation and legal compliance</h3>
+
+      <p>
+        Kindred reviews credible child safety concerns and complies with
+        applicable child safety laws. When legally required or appropriate,
+        suspected child sexual abuse or exploitation may be reported to
+        appropriate regional or national authorities, including the National
+        Center for Missing &amp; Exploited Children's CyberTipline for
+        applicable United States reports.
+      </p>
+
+      <h3>Contact Kindred</h3>
+
+      <p>
+        Questions or concerns regarding Kindred's child safety practices can
+        be sent to
+        <a href="mailto:kindredappofficial@gmail.com">
+          kindredappofficial@gmail.com
+        </a>.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- SUPPORT -->
+
+  <section id="support">
+    <div class="content">
+
       <h2>Kindred Support</h2>
+
       <p>
         Need help with your account, safety, or the Kindred app?
       </p>
+
       <p>
         Email:
         <a href="mailto:kindredappofficial@gmail.com">
           kindredappofficial@gmail.com
         </a>
       </p>
+
     </div>
   </section>
 
 </main>
+
 
 <footer>
   © 2026 Kindred. All rights reserved.
