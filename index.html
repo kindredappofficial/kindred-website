@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kindred | Meaningful Connections</title>
+  <link rel="icon" type="image/png" href="Kindred_ICON.png">
 
   <style>
     * {
@@ -34,10 +35,20 @@
     }
 
     .logo {
-      font-size: 30px;
-      font-weight: 700;
-      letter-spacing: -1px;
-    }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.logo img {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  object-fit: cover;
+}
 
     nav {
       display: flex;
@@ -189,7 +200,10 @@
 <body>
 
 <header>
-  <div class="logo">kindred</div>
+  <div class="logo">
+  <img src="Kindred_ICON.png" alt="Kindred">
+  <span>kindred</span>
+</div>
 
   <nav>
     <a href="#about">About</a>
